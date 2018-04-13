@@ -1,0 +1,19 @@
+apistat.py  [help]
+            [setlog] [path/to/logfile.txt] [log string format "..."]
+            [make] [url]
+            [drop]
+            [show]  [url]   [method]
+
+    setlog:     This command set up log file for which statistics
+                will be built
+                "log string format" may be is "__DAY__[regex]__YEAR__[regex]__METHOD__[regex]__URL__"
+
+    help:       This command return information about how to use this script
+
+    make:       This command get url for which statistics
+                will be built on log_file who setting by [setlog] command
+
+    drop:       This command drop all your data; That must run before trying to
+                get new statistics information from new log file
+
+    show:       This command show statistics about one url and method, if that was parsed
